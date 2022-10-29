@@ -290,7 +290,7 @@ header{
     align-items: center;
     height: 62vh;
     width: 700px;
-    border:1px solid red;
+    
 
     
 }
@@ -326,7 +326,7 @@ header{
     border-radius: 1.5rem;
     padding:2vh 4vw 6vh 4vw;
     margin-right: 15vw;
-    border:1px solid red;
+    
     
 
     
@@ -453,7 +453,7 @@ header{
     width: 15vw;
     display: none;
     font-size: 15px;
-    border:1px solid red;       
+    border:1px solid red;      
 }
 #msgSucess{
     text-align: center;
