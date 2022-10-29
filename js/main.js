@@ -326,4 +326,3 @@ function entrar(){
 function sair(){
     window.location.href ='index.html'
 }
-
