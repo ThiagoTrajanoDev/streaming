@@ -269,15 +269,26 @@ function entrar(){
 
     let msgError1 = document.querySelector('#msgError1') 
     let listaUser = []
-
+    let arraylength = listaUser
     let userValid = {
         nome: ' ',
         user: ' ',
         senha: ' '
 
     }
+   
     
     listaUser = JSON.parse(localStorage.getItem('listaUser'))
+    
+    if (arraylength==0) {
+        userLabel.setAttribute('style', 'color:red')
+        boxLogin1.setAttribute('style', 'border-color:red')
+        senhaLabel.setAttribute('style', 'color:red')
+        boxLogin2.setAttribute('style', 'border-color:red')
+        msgError1.setAttribute("style", 'display:block')
+        msgError1.innerHTML="Usuário ou senha incorretos"
+        user.focus()
+    } 
     
     listaUser.forEach((item) =>{
         if(user.value == item.userCad && senha.value == item.senhaCad){
