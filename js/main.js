@@ -306,7 +306,7 @@ function entrar(){
     if(user.value==userValid.user && senha.value==userValid.user){
        
         window.location.href='home.html'
-        
+        console.log("passou")
         
         let token = Math.random().toString(16).substring(2)
         localStorage.setItem('token',token)
@@ -319,9 +319,11 @@ function entrar(){
         msgError1.setAttribute("style", 'display:block')
         msgError1.innerHTML="Usuário ou senha incorretos"
         user.focus()
+        console.log("não passou")
     
     }
 }   
+ 
 
 function sair(){
     window.location.href ='index.html'
