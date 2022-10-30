@@ -303,13 +303,11 @@ function entrar(){
         }
     })
 
-    if(user.value==userValid.user && senha.value==userValid.user){
+    if(user.value==userValid.user && senha.value==userValid.senha){
        
         window.location.href='home.html'
         console.log("passou")
         
-        let token = Math.random().toString(16).substring(2)
-        localStorage.setItem('token',token)
 
     } else{
         userLabel.setAttribute('style', 'color:red')
