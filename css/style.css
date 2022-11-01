@@ -2,13 +2,11 @@
     box-sizing: border-box;
     margin:0;
     padding: 0;
-    
+    scroll-behavior: smooth;
 }
 
 body{
-    /* background: linear-gradient(to bottom,#4a4a4a 0%,#1a191a 100%); */
-    /* background: linear-gradient(to bottom, #fff 0%, #a8a8a8 100%); */
-    /* background: linear-gradient(to bottom, #cfebdf 0%, #E2FADB 100%); */
+
     background: #000;
     background-attachment: fixed;
     Font-family: 'Nunito', sans-serif;
@@ -435,12 +433,13 @@ header{
 /* TELA DE CADASTRO */
 
 .cadastro{
-    height:100vh;  
+    height:300vh;  
     display: flex;
     flex-direction: row;
     column-gap: 5vw;
     padding-top: 15vh;
     padding-left: 15vw;
+    
 }
 
 #msgError{
@@ -498,4 +497,102 @@ header{
 .tituloLogin span{
     color:red;
     
+}
+
+/* PAGINA DE PRODUTOS */
+
+
+.containerPlanos{
+    
+    width: 90vw;
+    height: 90vh;
+    margin:5vh auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    left:0;
+    position:absolute;
+    margin-top:90vh
+}
+
+.produtoImpar{
+    
+    width: 20vw;
+    height: 45vh;
+    flex-basis: 100%;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.imgProduto{
+    width: 25vw;
+    margin-left: 0;
+    padding-top: 5vh;
+}
+
+.produto1{
+       
+        width: 60vw;
+        padding-right: 0;
+        font-family: "Montserrat", sans-serif;  
+        text-align:center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;  
+        border-bottom: solid red
+}
+
+.produto1 span{
+    font-size: 4vh;
+}
+.produto1 .tituloProduto{
+    color:red;
+    font-size: 7vh;
+    line-height:15vh;
+}
+
+.preco{
+    color:red;
+}
+
+
+.produtoPar{
+    
+    width: 45vw;
+    height: 45vh;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.imgProduto2{
+    justify-content:end;
+    display: inline-block;
+    width: 25vw;
+    justify-self:flex-end;
+    padding-top: 5vh;
+ }
+
+ .produto2{
+   width: 60vw; 
+   font-family: "Montserrat", sans-serif;  
+   text-align:center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:space-around;   
+   border-bottom: solid red;
+ }
+ 
+ .produto2 .tituloProduto{
+    color:red;
+    font-size: 7vh;
+    line-height:15vh;
+ }
+
+ .produto2 span{
+    font-size: 4vh;
 }
