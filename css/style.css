@@ -325,13 +325,10 @@ body{
 }
 .loginComContas img{
     width: 2vw;
-    filter:invert(100) ;
+    filter:invert(100);
+    cursor: pointer;
 }
 
-.iconeLogin{
-    flex-basis: 100%;
-    
-}
 
 /* TELA DE CADASTRO */
 

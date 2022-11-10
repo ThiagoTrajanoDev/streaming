@@ -1,7 +1,8 @@
 const seriesFilmes = document.getElementById('seriesFilmes')
 const series = document.getElementById('series')
 const filmes = document.getElementById('filmes')
-
+const google =  document.querySelector("#google")
+const face =  document.querySelector("#face")
 
 let btn = document.querySelector("#btn")
 
@@ -326,3 +327,11 @@ function entrar(){
 function sair(){
     window.location.href ='index.html'
 }
+// FUNÇÃO PARA ABERTURA DE POP UP PARA LOGIN EM GOOGLE E FACE
+google.addEventListener("click", ()=>{
+    window.open("https://accounts.google.com/v3/signin/identifier?dsh=S185187890%3A1668034931963208&hl=pt-br&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=ARgdvAvsBflEhmR_yLeCVs6GZYHWBF0NNiC7EAPHmtAra8rFAsm-RcjvUmVbSDULdOBsh7RRcIUFHg","Fazer login com conta Google","toolbar=no,location=no,directories=no,status=no, menubar=no,scrollbars=yes,resizable=no,width=600, height=550,top=150,left=600")
+})
+face.addEventListener("click", ()=>{
+    window.open("https://pt-br.facebook.com/","Fazer login com conta Google","toolbar=no,location=no,directories=no,status=no, menubar=no,scrollbars=yes,resizable=no,width=600, height=550,top=150,left=600")
+})
+
